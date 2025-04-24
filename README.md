@@ -4,7 +4,7 @@
   
 **Integrantes del grupo:**  
 - Cabezas Diaz Renzo Edgar 20224558
-- 
+- David Vela Larrea 
 -   
 -
 -
