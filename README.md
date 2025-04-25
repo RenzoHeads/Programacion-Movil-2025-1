@@ -149,8 +149,35 @@ Después de eliminar la tarea, el sistema muestra un mensaje de confirmación y 
 Diagrama de Caso de Uso:
 ![Eliminar tarea](eliminarTarea.png)
 
+#### Visualizar todas las tareas
+Actor: Usuario
+Caso de Uso: Visualizar todas las tareas
 
-2. Buscar tareas y listas
+Flujo:
+
+El Usuario solicita ver todas las tareas.
+
+El sistema consulta la base de datos y muestra todas las tareas disponibles.
+
+Diagrama de Caso de Uso: ![Visualizar tareas](visualizarTareas.png)
+
+#### Marcar tarea como completada
+Actor: Usuario
+Caso de Uso: Marcar tarea como completada
+
+Flujo:
+
+El Usuario selecciona una tarea para marcarla como completada.
+
+El sistema actualiza el estado de la tarea en la base de datos.
+
+Después de la actualización, el sistema muestra un mensaje de confirmación.
+
+El sistema regresa al "Marcar tarea como completada" para permitir al Usuario realizar más cambios.
+
+Diagrama de Caso de Uso: ![Marcar tarea completada](marcarTareaCompletada.png)
+
+#### Buscar tareas y listas
 Actor: Usuario
 Caso de Uso: Buscar tareas y listas
 
@@ -224,21 +251,7 @@ El sistema muestra un mensaje de error.
 
 Diagrama de Caso de Uso: ![Eliminar lista](eliminarLista.png)
 
-6. Marcar tarea como completada
-Actor: Usuario
-Caso de Uso: Marcar tarea como completada
 
-Flujo:
-
-El Usuario selecciona una tarea para marcarla como completada.
-
-El sistema actualiza el estado de la tarea en la base de datos.
-
-Después de la actualización, el sistema muestra un mensaje de confirmación.
-
-El sistema regresa al "Marcar tarea como completada" para permitir al Usuario realizar más cambios.
-
-Diagrama de Caso de Uso: ![Marcar tarea completada](marcarTareaCompletada.png)
 
 
 7. Ver detalles de lista
@@ -266,18 +279,6 @@ El sistema consulta la base de datos y muestra todas las listas disponibles.
 
 Diagrama de Caso de Uso: ![Ver todas las listas](verTodasListas.png)
 
-
-9. Visualizar todas las tareas
-Actor: Usuario
-Caso de Uso: Visualizar todas las tareas
-
-Flujo:
-
-El Usuario solicita ver todas las tareas.
-
-El sistema consulta la base de datos y muestra todas las tareas disponibles.
-
-Diagrama de Caso de Uso: ![Visualizar tareas](visualizarTareas.png)
 
 10. Asignar/desasignar tareas de una lista
 Actor: Usuario
