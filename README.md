@@ -100,6 +100,27 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ## ✅ Diagrama de casos de uso (Requisitos funcionales)
 
+### Autenticación y Perfil
+
+#### Registro de Usuario
+
+![Registro de Usuario](diagramasCU/1_registro_usuario.png)
+
+#### Inicio de Sesión
+
+![Inicio de Sesión](diagramasCU/2_inicio_sesion.png)
+
+#### Restablecer Contraseña
+
+![Restablecer Contraseña](diagramasCU/3_restablecer_contrasena.png)
+
+#### Actualizar Datos del Usuario
+
+![Actualizar Datos del Usuario](diagramasCU/4_actualizar_datos_usuario.png)
+
+---
+
+
 1. Eliminar tarea
 Actor: Usuario
 Caso de Uso: Eliminar tarea
