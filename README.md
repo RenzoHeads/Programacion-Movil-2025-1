@@ -189,7 +189,11 @@ El sistema consulta la base de datos y devuelve las tareas y listas que coincide
 
 Diagrama de Caso de Uso: ![Buscar tareas](buscarTareas.png)
 
-3. Crear lista
+---
+
+### Gestión de Listas
+
+#### Crear lista
 Actor: Usuario
 Caso de Uso: Crear lista
 
@@ -206,7 +210,7 @@ El sistema luego regresa al inicio o a la pantalla principal.
 Diagrama de Caso de Uso: ![Crear lista](crearLista.png)
 
 
-4. Editar lista (cambiar nombre, color o descripción)
+#### Editar lista (cambiar nombre, color o descripción)
 Actor: Usuario
 Caso de Uso: Editar lista (cambiar nombre, color o descripción)
 
@@ -229,7 +233,7 @@ El sistema muestra un mensaje de error.
 Diagrama de Caso de Uso: ![Editar lista](editarLista.png)
 
 
-5. Eliminar lista
+#### Eliminar lista
 Actor: Usuario
 Caso de Uso: Eliminar lista
 
@@ -252,9 +256,7 @@ El sistema muestra un mensaje de error.
 Diagrama de Caso de Uso: ![Eliminar lista](eliminarLista.png)
 
 
-
-
-7. Ver detalles de lista
+#### Ver detalles de lista
 Actor: Usuario
 Caso de Uso: Ver detalles de lista
 
@@ -267,7 +269,7 @@ El sistema consulta la base de datos y devuelve los detalles de la lista selecci
 Diagrama de Caso de Uso: ![Ver lista](verLista.png)
 
 
-8. Visualizar todas las listas
+#### Visualizar todas las listas
 Actor: Usuario
 Caso de Uso: Visualizar todas las listas
 
@@ -280,7 +282,7 @@ El sistema consulta la base de datos y muestra todas las listas disponibles.
 Diagrama de Caso de Uso: ![Ver todas las listas](verTodasListas.png)
 
 
-10. Asignar/desasignar tareas de una lista
+#### Asignar/desasignar tareas de una lista
 Actor: Usuario
 Caso de Uso: Asignar/desasignar tareas de una lista
 
