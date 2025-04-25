@@ -300,6 +300,11 @@ El sistema regresa al "Asignar/desasignar tareas de una lista" para permitir al 
 Diagrama de Caso de Uso: ![Asignar/desasignar tareas]( asignarTarea.png)
 
 
+#### Generar Lista con Tareas usando Inteligencia Artificial
+
+![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/7_generar_lista_con_ia.png)
+
+
 
 
 
