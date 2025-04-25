@@ -116,6 +116,146 @@ Después de eliminar la tarea, el sistema muestra un mensaje de confirmación y 
 
 Diagrama de Caso de Uso:(diagramasCU/eliminarTarea.png)
 
+2. Buscar tareas y listas
+Actor: Usuario
+Caso de Uso: Buscar tareas y listas
+
+Flujo:
+
+El Usuario solicita buscar tareas o listas específicas.
+
+El sistema consulta la base de datos y devuelve las tareas y listas que coinciden con los criterios de búsqueda.
+
+Diagrama de Caso de Uso: (diagramasCU/buscarTareas.png)
+
+3. Crear lista
+Actor: Usuario
+Caso de Uso: Crear lista
+
+Flujo:
+
+El Usuario ingresa el nombre y detalles para crear una nueva lista.
+
+El sistema guarda la nueva lista en la base de datos.
+
+Después de guardar la lista, el sistema muestra un mensaje de confirmación.
+
+El sistema luego regresa al inicio o a la pantalla principal.
+
+Diagrama de Caso de Uso: (diagramasCU/crearLista.png)
+
+4. Editar lista (cambiar nombre, color o descripción)
+Actor: Usuario
+Caso de Uso: Editar lista (cambiar nombre, color o descripción)
+
+Flujo:
+
+El Usuario selecciona una lista para editar.
+
+El sistema valida que los datos ingresados sean correctos.
+
+Si la validación es exitosa:
+
+El sistema guarda los cambios en la base de datos.
+
+Muestra un mensaje de confirmación y regresa al inicio.
+
+Si la validación falla:
+
+El sistema muestra un mensaje de error.
+
+Diagrama de Caso de Uso: (diagramasCU/editarLista.png)
+
+5. Eliminar lista
+Actor: Usuario
+Caso de Uso: Eliminar lista
+
+Flujo:
+
+El Usuario selecciona una lista para eliminar.
+
+El sistema valida que la lista se pueda eliminar.
+
+Si la validación es exitosa:
+
+El sistema elimina la lista de la base de datos.
+
+Muestra un mensaje de confirmación y regresa al inicio.
+
+Si la validación falla:
+
+El sistema muestra un mensaje de error.
+
+Diagrama de Caso de Uso: (diagramasCU/eliminarLista.png)
+
+6. Marcar tarea como completada
+Actor: Usuario
+Caso de Uso: Marcar tarea como completada
+
+Flujo:
+
+El Usuario selecciona una tarea para marcarla como completada.
+
+El sistema actualiza el estado de la tarea en la base de datos.
+
+Después de la actualización, el sistema muestra un mensaje de confirmación.
+
+El sistema regresa al "Marcar tarea como completada" para permitir al Usuario realizar más cambios.
+
+Diagrama de Caso de Uso: (diagramasCU/marcarTareaCompleta.png)
+
+7. Ver detalles de lista
+Actor: Usuario
+Caso de Uso: Ver detalles de lista
+
+Flujo:
+
+El Usuario selecciona una lista para ver sus detalles.
+
+El sistema consulta la base de datos y devuelve los detalles de la lista seleccionada.
+
+Diagrama de Caso de Uso: (diagramasCU/verLista.png)
+
+8. Visualizar todas las listas
+Actor: Usuario
+Caso de Uso: Visualizar todas las listas
+
+Flujo:
+
+El Usuario solicita ver todas las listas.
+
+El sistema consulta la base de datos y muestra todas las listas disponibles.
+
+Diagrama de Caso de Uso: (diagramasCU/verTodasListas.png)
+
+9. Visualizar todas las tareas
+Actor: Usuario
+Caso de Uso: Visualizar todas las tareas
+
+Flujo:
+
+El Usuario solicita ver todas las tareas.
+
+El sistema consulta la base de datos y muestra todas las tareas disponibles.
+
+Diagrama de Caso de Uso: (diagramasCU/visualizarTareas.png)
+Asignar/desasignar tareas de una lista
+Actor: Usuario
+Caso de Uso: Asignar/desasignar tareas de una lista
+
+Flujo:
+
+El Usuario selecciona una lista y una tarea para asignar o desasignar.
+
+El sistema realiza la acción correspondiente (asignar o desasignar) de la tarea en la lista.
+
+El sistema actualiza la base de datos con el cambio realizado.
+
+Después de la actualización, el sistema muestra un mensaje de confirmación.
+
+El sistema regresa al "Asignar/desasignar tareas de una lista" para permitir al Usuario continuar con otras asignaciones o desasignaciones.
+
+Diagrama de Caso de Uso: (diagramasCU/asignarTarea.png)
 ---
 
 ## 📚 Descripción de Casos de Uso
