@@ -121,7 +121,18 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 ---
 
 
-1. Eliminar tarea
+### Gestión de Tareas
+
+#### Crear Tarea
+
+![Crear Tarea](diagramasCU/5_crear_tarea.png)
+
+#### Editar Tarea
+
+![Editar Tarea](diagramasCU/6_editar_tarea.png)
+
+
+#### Eliminar tarea
 Actor: Usuario
 Caso de Uso: Eliminar tarea
 
@@ -227,7 +238,7 @@ Después de la actualización, el sistema muestra un mensaje de confirmación.
 
 El sistema regresa al "Marcar tarea como completada" para permitir al Usuario realizar más cambios.
 
-Diagrama de Caso de Uso: ![Marcar tarea completada](marcarTareaCompleta.png)
+Diagrama de Caso de Uso: ![Marcar tarea completada](marcarTareaCompletada.png)
 
 
 7. Ver detalles de lista
