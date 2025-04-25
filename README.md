@@ -17,7 +17,7 @@
 ---
 ## 🚀 Diagrama de Despliegue
 
-![Diagrama de Despliegue](diagramadespliegue1.png)
+![Diagrama de Despliegue](diagramadespliegue2.png)
 
 
 ---
