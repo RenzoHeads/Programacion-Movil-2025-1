@@ -6,7 +6,7 @@
 - Cabezas Diaz Renzo Edgar 20224558
 - David Vela Larrea 20202209
 - Diego Arturo Huaman Bonilla 20211287
-- 
+- Rodrigo Alonso Lara Camacho 20211415
 - 
 ---
 
