@@ -239,7 +239,8 @@ El Usuario solicita ver todas las tareas.
 El sistema consulta la base de datos y muestra todas las tareas disponibles.
 
 Diagrama de Caso de Uso: (diagramasCU/visualizarTareas.png)
-Asignar/desasignar tareas de una lista
+
+10.Asignar/desasignar tareas de una lista
 Actor: Usuario
 Caso de Uso: Asignar/desasignar tareas de una lista
 
