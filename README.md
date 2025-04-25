@@ -261,10 +261,13 @@ El sistema actualiza la base de datos con el cambio realizado.
 Después de la actualización, el sistema muestra un mensaje de confirmación.
 
 El sistema regresa al "Asignar/desasignar tareas de una lista" para permitir al Usuario continuar con otras asignaciones o desasignaciones.
-
 Diagrama de Caso de Uso: ![Asignar/desasignar tareas](diagramasCU/asignarTarea.png)
 
----
+
+
+
+
+--------
 
 ## 📚 Descripción de Casos de Uso
 
