@@ -1,13 +1,13 @@
 
 # 📱 Proyecto de Aplicación Móvil - Asignación 1
 
-  
-**Integrantes del grupo:**  
+
+**Integrantes del grupo:**
 - Cabezas Diaz Renzo Edgar 20224558
 - David Vela Larrea 20202209
 - Diego Arturo Huaman Bonilla 20211287
 - Rodrigo Alonso Lara Camacho 20211415
-- 
+-
 ---
 
 ## 🛠️ Entorno de Desarrollo
@@ -98,9 +98,23 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ---
 
-## ✅ Diagrama de casos de uso (Requisitos funcionales) 
+## ✅ Diagrama de casos de uso (Requisitos funcionales)
 
+1. Eliminar tarea
+Actor: Usuario
+Caso de Uso: Eliminar tarea
 
+Flujo:
+
+El Usuario selecciona una tarea para eliminar.
+
+El sistema muestra una confirmación para asegurarse de que el Usuario quiere eliminar la tarea.
+
+Si el Usuario confirma, el sistema elimina la tarea de la base de datos.
+
+Después de eliminar la tarea, el sistema muestra un mensaje de confirmación y regresa al inicio.
+
+Diagrama de Caso de Uso:(diagramasCU/eliminarTarea.png)
 
 ---
 
