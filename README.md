@@ -305,10 +305,25 @@ Diagrama de Caso de Uso: ![Asignar/desasignar tareas]( asignarTarea.png)
 ![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/7_generar_lista_con_ia.png)
 
 
+### Gestión de Notificaciones
+
+#### Visualizar Notificaciones
+
+![Visualizar Notificaciones](diagramasCU/8_visualizar_notificaciones.png)
+ 
+
+#### Configurar Notificaciones
+
+![Configurar Notificaciones](diagramasCU/9_configurar_notificaciones.png)
+
+
+#### Recibir Notificaciones
+
+![Recibir Notificaciones](diagramasCU/10_recibir_notificaciones.png)
 
 
 
---------
+---
 
 ## 📚 Descripción de Casos de Uso
 
