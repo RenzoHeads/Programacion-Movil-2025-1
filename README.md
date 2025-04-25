@@ -4,10 +4,10 @@
   
 **Integrantes del grupo:**  
 - Cabezas Diaz Renzo Edgar 20224558
-- David Vela Larrea 
--   
--
--
+- David Vela Larrea 20202209
+- Diego Arturo Huaman Bonilla 20211287
+- 
+- 
 ---
 
 ## 🛠️ Entorno de Desarrollo
