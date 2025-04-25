@@ -114,7 +114,8 @@ Si el Usuario confirma, el sistema elimina la tarea de la base de datos.
 
 Después de eliminar la tarea, el sistema muestra un mensaje de confirmación y regresa al inicio.
 
-Diagrama de Caso de Uso: ![Eliminar tarea](eliminarTarea.png)
+Diagrama de Caso de Uso:
+![Eliminar tarea](eliminarTarea.png)
 
 
 2. Buscar tareas y listas
