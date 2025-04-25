@@ -7,7 +7,7 @@
 - David Vela Larrea 20202209
 - Diego Arturo Huaman Bonilla 20211287
 - Rodrigo Alonso Lara Camacho 20211415
--
+- Rodrigo Gabriel Pérez Peña 20191544
 ---
 
 ## 🛠️ Entorno de Desarrollo
