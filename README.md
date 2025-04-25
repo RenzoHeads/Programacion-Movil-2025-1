@@ -114,7 +114,8 @@ Si el Usuario confirma, el sistema elimina la tarea de la base de datos.
 
 Después de eliminar la tarea, el sistema muestra un mensaje de confirmación y regresa al inicio.
 
-Diagrama de Caso de Uso:(diagramasCU/eliminarTarea.png)
+Diagrama de Caso de Uso: ![Eliminar tarea](diagramasCU/eliminarTarea.png)
+
 
 2. Buscar tareas y listas
 Actor: Usuario
@@ -126,7 +127,7 @@ El Usuario solicita buscar tareas o listas específicas.
 
 El sistema consulta la base de datos y devuelve las tareas y listas que coinciden con los criterios de búsqueda.
 
-Diagrama de Caso de Uso: (diagramasCU/buscarTareas.png)
+Diagrama de Caso de Uso: ![Buscar tareas](diagramasCU/buscarTareas.png)
 
 3. Crear lista
 Actor: Usuario
@@ -142,7 +143,8 @@ Después de guardar la lista, el sistema muestra un mensaje de confirmación.
 
 El sistema luego regresa al inicio o a la pantalla principal.
 
-Diagrama de Caso de Uso: (diagramasCU/crearLista.png)
+Diagrama de Caso de Uso: ![Crear lista](diagramasCU/crearLista.png)
+
 
 4. Editar lista (cambiar nombre, color o descripción)
 Actor: Usuario
@@ -164,7 +166,8 @@ Si la validación falla:
 
 El sistema muestra un mensaje de error.
 
-Diagrama de Caso de Uso: (diagramasCU/editarLista.png)
+Diagrama de Caso de Uso: ![Editar lista](diagramasCU/editarLista.png)
+
 
 5. Eliminar lista
 Actor: Usuario
@@ -186,7 +189,7 @@ Si la validación falla:
 
 El sistema muestra un mensaje de error.
 
-Diagrama de Caso de Uso: (diagramasCU/eliminarLista.png)
+Diagrama de Caso de Uso: ![Eliminar lista](diagramasCU/eliminarLista.png)
 
 6. Marcar tarea como completada
 Actor: Usuario
@@ -202,7 +205,8 @@ Después de la actualización, el sistema muestra un mensaje de confirmación.
 
 El sistema regresa al "Marcar tarea como completada" para permitir al Usuario realizar más cambios.
 
-Diagrama de Caso de Uso: (diagramasCU/marcarTareaCompleta.png)
+Diagrama de Caso de Uso: ![Marcar tarea completada](diagramasCU/marcarTareaCompleta.png)
+
 
 7. Ver detalles de lista
 Actor: Usuario
@@ -214,7 +218,8 @@ El Usuario selecciona una lista para ver sus detalles.
 
 El sistema consulta la base de datos y devuelve los detalles de la lista seleccionada.
 
-Diagrama de Caso de Uso: (diagramasCU/verLista.png)
+Diagrama de Caso de Uso: ![Ver lista](diagramasCU/verLista.png)
+
 
 8. Visualizar todas las listas
 Actor: Usuario
@@ -226,7 +231,8 @@ El Usuario solicita ver todas las listas.
 
 El sistema consulta la base de datos y muestra todas las listas disponibles.
 
-Diagrama de Caso de Uso: (diagramasCU/verTodasListas.png)
+Diagrama de Caso de Uso: ![Ver todas las listas](diagramasCU/verTodasListas.png)
+
 
 9. Visualizar todas las tareas
 Actor: Usuario
@@ -238,8 +244,9 @@ El Usuario solicita ver todas las tareas.
 
 El sistema consulta la base de datos y muestra todas las tareas disponibles.
 
-Diagrama de Caso de Uso: (diagramasCU/visualizarTareas.png)
-Asignar/desasignar tareas de una lista
+Diagrama de Caso de Uso: ![Visualizar tareas](diagramasCU/visualizarTareas.png)
+
+10. Asignar/desasignar tareas de una lista
 Actor: Usuario
 Caso de Uso: Asignar/desasignar tareas de una lista
 
@@ -255,7 +262,8 @@ Después de la actualización, el sistema muestra un mensaje de confirmación.
 
 El sistema regresa al "Asignar/desasignar tareas de una lista" para permitir al Usuario continuar con otras asignaciones o desasignaciones.
 
-Diagrama de Caso de Uso: (diagramasCU/asignarTarea.png)
+Diagrama de Caso de Uso: ![Asignar/desasignar tareas](diagramasCU/asignarTarea.png)
+
 ---
 
 ## 📚 Descripción de Casos de Uso
