@@ -27,8 +27,8 @@
 ### Autenticación segura entre cliente y servidor:
 La aplicación móvil en Flutter debe comunicarse con el backend mediante HTTPS cada solicitud enviada al servidor Ruby.
 
-### Alta disponibilidad del backend:
-El Servicio de Aplicaciones que ejecuta el backend Ruby en Azure debe estar configurado con redundancia y escalado automático para garantizar disponibilidad continua.
+### Disponibilidad del backend:
+El Servicio de Aplicaciones de Azure que ejecuta el backend Ruby garantiza disponibilidad continua.
 
 ### Acceso rápido a imágenes:
 El acceso a imágenes almacenadas en Azure Blob Storage debe realizarse mediante URLs firmadas (SAS tokens).
