@@ -272,5 +272,4 @@ Diagrama de Caso de Uso: ![Asignar/desasignar tareas](diagramasCU/asignarTarea.p
 ## 📚 Descripción de Casos de Uso
 
 
-
 ---
