@@ -157,51 +157,51 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 ![Editar Tarea](diagramasCU/6_editar_tarea.png) 
 
 #### Eliminar Tarea
-![Eliminar tarea](eliminarTarea.png)
+![Eliminar tarea](diagramasCU/7_eliminar_tarea.png)
 
 #### Visualizar Tareas
-![Visualizar tareas](visualizarTareas.png)  
+![Visualizar tareas](diagramasCU/8_visualizar_tareas.png)  
 
 #### Marcar Tarea como Completada
-![Marcar tarea completada](marcarTareaCompletada.png)  
+![Marcar tarea completada](diagramasCU/9_marcar_tarea_completada.png)  
 
 #### Buscar Tareas y Listas
-![Buscar tareas](buscarTareas.png)  
+![Buscar tareas](diagramasCU/10_buscar_tareas.png)  
 
 
 ### Gestión de Listas
 
 #### Crear Lista
-![Crear lista](crearLista.png)  
+![Crear lista](diagramasCU/11_crear_lista.png)  
 
 #### Editar Lista
-![Editar lista](editarLista.png)  
+![Editar lista](diagramasCU/12_editar_lista.png)  
 
 #### Eliminar Lista
-![Eliminar lista](eliminarLista.png)  
+![Eliminar lista](diagramasCU/13_eliminar_lista.png)  
 
 #### Ver Detalles de Lista
-![Ver lista](verLista.png)  
+![Ver lista](diagramasCU/14_ver_lista.png)
 
 #### Visualizar Todas las Listas
-![Ver todas las listas](verTodasListas.png)  
+![Ver todas las listas](diagramasCU/15_ver_todas_listas.png)  
 
 #### Asignar/Desasignar Tareas de una Lista
-![Asignar/desasignar tareas](asignarTarea.png)  
+![Asignar/desasignar tareas](diagramasCU/16_asignar_tarea.png)  
 
 #### Generar Lista con Tareas usando Inteligencia Artificial
-![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/7_generar_lista_con_ia.png)  
+![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/17_generar_lista_con_ia.png)  
 
 ### Gestión de Notificaciones
 
 #### Visualizar Notificaciones
-![Visualizar Notificaciones](diagramasCU/8_visualizar_notificaciones.png)  
+![Visualizar Notificaciones](diagramasCU/18_visualizar_notificaciones.png)  
 
 #### Configurar Notificaciones
-![Configurar Notificaciones](diagramasCU/9_configurar_notificaciones.png)  
+![Configurar Notificaciones](diagramasCU/19_configurar_notificaciones.png)  
 
 #### Recibir Notificaciones
-![Recibir Notificaciones](diagramasCU/10_recibir_notificaciones.png)  
+![Recibir Notificaciones](diagramasCU/20_recibir_notificaciones.png)  
 
 ---
 
