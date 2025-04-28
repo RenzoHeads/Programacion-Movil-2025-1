@@ -131,7 +131,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ## 📸 Imágenes de Casos de Uso
 
-## 📸 Imágenes de Casos de Uso
+
 
 ### Autenticación y Perfil
 - ![Registro de Usuario](diagramasCU/1_registro_usuario.png)  
