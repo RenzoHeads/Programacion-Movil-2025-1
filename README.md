@@ -181,7 +181,12 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 - ![Recibir Notificaciones](diagramasCU/10_recibir_notificaciones.png)  
   **Recibir Notificaciones**
 
+---
 
+## 📚 Diagrama de clases
+
+![Diagrama de clases](diagrama_clases.png)  
+---
 ---
 
 ## 📚 Descripción de Casos de Uso
