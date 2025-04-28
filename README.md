@@ -104,44 +104,83 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ### Casos de Uso 
 
-| Grupo de Casos de Uso           | Descripción |
-|----------------------------------|-------------|
-| Autenticación y Perfil           | Permite al usuario registrarse, iniciar sesión, restablecer contraseña y actualizar sus datos personales. |
-| Gestión de Tareas                | Permite al usuario crear, editar, eliminar, visualizar tareas, marcar tareas como completadas y buscar tareas o listas. |
-| Gestión de Listas                | Permite al usuario crear, editar, eliminar listas, ver detalles de una lista, visualizar todas las listas, asignar o desasignar tareas a listas, y generar listas automáticamente mediante Inteligencia Artificial. |
-| Gestión de Notificaciones        | Permite al usuario visualizar, configurar y recibir notificaciones relacionadas a su actividad en la aplicación. |
+| Caso de Uso                                 | Descripción |
+|----------------------------------------------|-------------|
+| Registro de Usuario                         | Permite al usuario registrarse en el sistema proporcionando sus datos personales. |
+| Inicio de Sesión                            | Permite al usuario iniciar sesión en la aplicación. |
+| Restablecer Contraseña                      | Permite al usuario recuperar el acceso a su cuenta mediante el restablecimiento de contraseña. |
+| Actualizar Datos del Usuario                | Permite al usuario actualizar su información personal. |
+| Crear Tarea                                 | Permite al usuario crear una nueva tarea. |
+| Editar Tarea                                | Permite al usuario editar una tarea existente. |
+| Eliminar Tarea                              | Permite al usuario eliminar una tarea existente. |
+| Visualizar todas las tareas                 | Permite al usuario ver todas las tareas disponibles. |
+| Marcar tarea como completada                | Permite al usuario marcar una tarea como completada. |
+| Buscar tareas y listas                      | Permite al usuario buscar tareas y listas específicas. |
+| Crear lista                                 | Permite al usuario crear una nueva lista de tareas. |
+| Editar lista                                | Permite al usuario editar el nombre, color o descripción de una lista. |
+| Eliminar lista                              | Permite al usuario eliminar una lista existente. |
+| Ver detalles de lista                       | Permite al usuario ver los detalles de una lista específica. |
+| Visualizar todas las listas                 | Permite al usuario visualizar todas las listas creadas. |
+| Asignar/desasignar tareas de una lista       | Permite al usuario asignar o desasignar tareas a/de una lista. |
+| Generar Lista con Tareas usando IA           | Permite generar automáticamente una lista de tareas utilizando Inteligencia Artificial. |
+| Visualizar Notificaciones                   | Permite al usuario visualizar sus notificaciones. |
+| Configurar Notificaciones                   | Permite al usuario configurar cómo desea recibir notificaciones. |
+| Recibir Notificaciones                      | Permite al usuario recibir notificaciones de eventos importantes. |
 
 ---
 
 ## 📸 Imágenes de Casos de Uso
 
+## 📸 Imágenes de Casos de Uso
+
 ### Autenticación y Perfil
-- ![Registro de Usuario](diagramasCU/1_registro_usuario.png)
-- ![Inicio de Sesión](diagramasCU/2_inicio_sesion.png)
-- ![Restablecer Contraseña](diagramasCU/3_restablecer_contrasena.png)
-- ![Actualizar Datos del Usuario](diagramasCU/4_actualizar_datos_usuario.png)
+- ![Registro de Usuario](diagramasCU/1_registro_usuario.png)  
+  **Registro de Usuario**
+- ![Inicio de Sesión](diagramasCU/2_inicio_sesion.png)  
+  **Inicio de Sesión**
+- ![Restablecer Contraseña](diagramasCU/3_restablecer_contrasena.png)  
+  **Restablecer Contraseña**
+- ![Actualizar Datos del Usuario](diagramasCU/4_actualizar_datos_usuario.png)  
+  **Actualizar Datos del Usuario**
 
 ### Gestión de Tareas
-- ![Crear Tarea](diagramasCU/5_crear_tarea.png)
-- ![Editar Tarea](diagramasCU/6_editar_tarea.png)
-- ![Eliminar tarea](eliminarTarea.png)
-- ![Visualizar tareas](visualizarTareas.png)
-- ![Marcar tarea completada](marcarTareaCompletada.png)
-- ![Buscar tareas](buscarTareas.png)
+- ![Crear Tarea](diagramasCU/5_crear_tarea.png)  
+  **Crear Tarea**
+- ![Editar Tarea](diagramasCU/6_editar_tarea.png)  
+  **Editar Tarea**
+- ![Eliminar tarea](eliminarTarea.png)  
+  **Eliminar Tarea**
+- ![Visualizar tareas](visualizarTareas.png)  
+  **Visualizar Tareas**
+- ![Marcar tarea completada](marcarTareaCompletada.png)  
+  **Marcar Tarea como Completada**
+- ![Buscar tareas](buscarTareas.png)  
+  **Buscar Tareas y Listas**
 
 ### Gestión de Listas
-- ![Crear lista](crearLista.png)
-- ![Editar lista](editarLista.png)
-- ![Eliminar lista](eliminarLista.png)
-- ![Ver lista](verLista.png)
-- ![Ver todas las listas](verTodasListas.png)
-- ![Asignar/desasignar tareas](asignarTarea.png)
-- ![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/7_generar_lista_con_ia.png)
+- ![Crear lista](crearLista.png)  
+  **Crear Lista**
+- ![Editar lista](editarLista.png)  
+  **Editar Lista**
+- ![Eliminar lista](eliminarLista.png)  
+  **Eliminar Lista**
+- ![Ver lista](verLista.png)  
+  **Ver Detalles de Lista**
+- ![Ver todas las listas](verTodasListas.png)  
+  **Visualizar Todas las Listas**
+- ![Asignar/desasignar tareas](asignarTarea.png)  
+  **Asignar/Desasignar Tareas de una Lista**
+- ![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/7_generar_lista_con_ia.png)  
+  **Generar Lista con Tareas usando Inteligencia Artificial**
 
 ### Gestión de Notificaciones
-- ![Visualizar Notificaciones](diagramasCU/8_visualizar_notificaciones.png)
-- ![Configurar Notificaciones](diagramasCU/9_configurar_notificaciones.png)
-- ![Recibir Notificaciones](diagramasCU/10_recibir_notificaciones.png)
+- ![Visualizar Notificaciones](diagramasCU/8_visualizar_notificaciones.png)  
+  **Visualizar Notificaciones**
+- ![Configurar Notificaciones](diagramasCU/9_configurar_notificaciones.png)  
+  **Configurar Notificaciones**
+- ![Recibir Notificaciones](diagramasCU/10_recibir_notificaciones.png)  
+  **Recibir Notificaciones**
+
 
 ---
 
