@@ -209,19 +209,21 @@ La gestión de tareas permite a los usuarios crear, editar, eliminar, visualizar
 ![Gestión de Tareas - 2](descripcion-casos-uso/2_acciones_tareas.png)
 
 
+
 ---
 
 ## Gestión de Listas
 
 La gestión de listas permite organizar tareas en diferentes listas personalizadas. Los usuarios pueden crear, editar, eliminar listas, visualizar sus detalles, gestionar las tareas asignadas y aprovechar la generación automática de listas mediante Inteligencia Artificial.
 
-![Gestion Tareas](gestionListas.png)  
+![Gestión de Listas - 1](descripcion-casos-uso/3_gestion_listas_1.png)
+
+![Gestión de Listas - 2](descripcion-casos-uso/3_gestion_listas_2.png)
 ---
 
 ## Gestión de Notificaciones
 
 La Gestión de notificaciones permite a los usuarios visualizar, configurar y recibir notificaciones relacionadas con sus tareas y listas. Esto ayuda a mantenerlos informados sobre eventos importantes y cambios dentro de la aplicación.
 
-![Gestion Tareas](gestionNoti.png)  
+![Gestión de Notificaciones](descripcion-casos-uso/4_gestion_notificaciones.png)
 
----
