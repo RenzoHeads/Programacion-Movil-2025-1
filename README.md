@@ -209,54 +209,243 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
   3. Si el email ya está en uso, muestra mensaje de error.
 
-  4. Si los datos son válidos, actualiza el perfil y muestra mensaje de éxito.
+  4. Si los datos son válidos, actualiza el perfil y muestra un mensaje de éxito.
 
 ![Actualizar Datos del Usuario](diagramasCU/4_actualizar_datos_usuario.png)  
 
 
+
 ### Gestión de Tareas
 
+
 #### Crear Tarea
+
+- **Actor:** Usuario
+
+- **Objetivo:** Crear una nueva tarea
+
+- **Pasos principales:**
+  1. El usuario ingresa los datos de la tarea.
+
+  2. El sistema valida los datos.
+
+  3. Si los datos están incompletos, muestra mensaje de error.
+
+  4. Si hay error al guardar, muestra mensaje de error.
+
+  5. Si los datos son válidos, guarda la tarea y muestra un mensaje de éxito.
+
 ![Crear Tarea](diagramasCU/5_crear_tarea.png)  
 
+
 #### Editar Tarea
+
+- **Actor:** Usuario
+
+- **Objetivo:** Editar tarea existente
+
+- **Pasos principales:**
+  1. El usuario selecciona la tarea a editar.
+
+  2. El sistema valida los datos modificados.
+
+  3. Si los datos están incompletos o si la tarea no existe, muestra mensaje de error.
+
+  5. Si los datos son válidos, actualiza la tarea y muestra mensaje de éxito.
+
 ![Editar Tarea](diagramasCU/6_editar_tarea.png) 
 
+
 #### Eliminar Tarea
+
+- **Actor:** Usuario
+
+- **Objetivo:** Eliminar una tarea existente
+
+- **Pasos principales:**
+  1. El usuario selecciona la tarea a eliminar.
+
+  2. El sistema solicita confirmación.
+
+  3. Si se confirma, elimina la tarea y redirige a la lista de tareas.
+
+  4. Si ocurre un error, muestra mensaje de error.
+
 ![Eliminar tarea](diagramasCU/7_eliminar_tarea.png)
 
+
 #### Visualizar Tareas
+
+- **Actor:** Usuario
+
+- **Objetivo:** Visualizar todas las tareas
+
+- **Pasos principales:**
+  1. El usuario solicita ver la lista de tareas.
+
+  2. El sistema carga las tareas desde la base de datos.
+
+  3. El sistema muestra la lista de tareas al usuario.
+
 ![Visualizar tareas](diagramasCU/8_visualizar_tareas.png)  
 
+
 #### Marcar Tarea como Completada
+
+- **Actor:** Usuario
+
+- **Objetivo:** Marcar tarea como completada
+
+- **Pasos principales:**
+  1. El usuario selecciona la tarea a marcar como completada.
+
+  2. El sistema actualiza el estado en la base de datos.
+
+  3. El sistema muestra mensaje de confirmación al usuario.
+
 ![Marcar tarea completada](diagramasCU/9_marcar_tarea_completada.png)  
 
+
 #### Buscar Tareas y Listas
+
+- **Actor:** Usuario
+
+- **Objetivo:** Buscar tareas y listas
+
+- **Pasos principales:**
+  1. El usuario ingresa el criterio de búsqueda.
+
+  2. El sistema consulta la base de datos.
+
+  3. El sistema muestra los resultados de la búsqueda al usuario.
+
 ![Buscar tareas](diagramasCU/10_buscar_tareas.png)  
+
 
 
 ### Gestión de Listas
 
+
 #### Crear Lista
+
+- **Actor:** Usuario  
+
+- **Objetivo:** Crear una nueva lista  
+
+- **Pasos principales:**  
+  1. El usuario ingresa los datos de la nueva lista.  
+
+  2. El sistema guarda la lista en la base de datos.  
+
+  3. El sistema muestra mensaje de confirmación.  
+
+  4. El sistema regresa a la pantalla inicial.
+
 ![Crear lista](diagramasCU/11_crear_lista.png)  
 
+
 #### Editar Lista
+
+- **Actor:** Usuario
+
+- **Objetivo:** Editar una lista existente
+
+- **Pasos principales:**
+  1. El usuario selecciona la lista a editar.
+
+  2. El sistema valida los datos modificados.
+
+  3. Si son válidos, guarda los cambios en la base de datos, muestra mensaje de confirmación y regresa a la pantalla inicial.
+
+  5. Si hay error, muestra mensaje de error.
+
 ![Editar lista](diagramasCU/12_editar_lista.png)  
 
+
 #### Eliminar Lista
+
+- **Actor:** Usuario
+
+- **Objetivo:** Eliminar una lista existente
+
+- **Pasos principales:**
+  1. El usuario selecciona la lista a eliminar.
+
+  2. El sistema valida la eliminación.
+
+  3. Elimina la lista de la base de datos, muestra mensaje de confirmación y regresa a la pantalla inicial.
+
+  5. Si hay error, muestra mensaje de error.
+
 ![Eliminar lista](diagramasCU/13_eliminar_lista.png)  
 
+
 #### Ver Detalles de Lista
+
+- **Actor:** Usuario
+
+- **Objetivo:** Ver detalles de una lista
+
+- **Pasos principales:**
+  1. El usuario selecciona una lista.
+
+  2. El sistema consulta la base de datos.
+
+  3. El sistema muestra los detalles de la lista al usuario.
+
 ![Ver lista](diagramasCU/14_ver_lista.png)
 
+
 #### Visualizar Todas las Listas
+
+- **Actor:** Usuario
+
+- **Objetivo:** Visualizar todas las listas
+
+- **Pasos principales:**
+  1. El usuario solicita ver las listas.
+
+  2. El sistema consulta la base de datos.
+
+  3. El sistema muestra todas las listas disponibles.
+
 ![Ver todas las listas](diagramasCU/15_ver_todas_listas.png)  
 
+
 #### Asignar/Desasignar Tareas de una Lista
+
+- **Actor:** Usuario
+
+- **Objetivo:** Asignar/desasignar tareas de una lista
+
+- **Pasos principales:**
+  1. El usuario selecciona la tarea a asignar/desasignar.
+
+  2. El sistema actualiza la base de datos.
+
+  3. El sistema muestra mensaje de confirmación.
+
 ![Asignar/desasignar tareas](diagramasCU/16_asignar_tarea.png)  
 
+
 #### Generar Lista con Tareas usando Inteligencia Artificial
+
+- **Actor:** Usuario
+
+- **Objetivo:** Generar lista con IA
+
+- **Pasos principales:**
+  1. El usuario ingresa un prompt y solicita generar una lista con IA.
+
+  2. El sistema valida los datos.
+
+  3. Si hay error de conexión con el proveedor de LLM, muestra mensaje de error.
+
+  4. Si la generación es exitosa, crea la lista con tareas.
+
 ![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/17_generar_lista_con_ia.png)  
+
+
 
 ### Gestión de Notificaciones
 
