@@ -207,7 +207,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ## 📚 Diagrama de clases
 
-![Diagrama de clases](diagrama_clases.png)  
+![Diagrama de clases](diagrama_declases.png)  
 ---
 ---
 
