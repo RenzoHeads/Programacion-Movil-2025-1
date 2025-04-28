@@ -449,13 +449,60 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ### Gestión de Notificaciones
 
+
 #### Visualizar Notificaciones
+
+- **Actor:** Usuario  
+
+- **Objetivo:** Ver notificaciones  
+
+- **Pasos principales:**  
+  1. El usuario solicita ver notificaciones.  
+
+  2. El sistema carga los datos.  
+
+  3. Si hay error en la base de datos, muestra mensaje de error.  
+
+  4. Si la lista está vacía, muestra mensaje indicando que no existen datos.  
+
+  5. Si la carga es exitosa, muestra las notificaciones.
+
 ![Visualizar Notificaciones](diagramasCU/18_visualizar_notificaciones.png)  
 
+
 #### Configurar Notificaciones
+
+- **Actor:** Usuario  
+
+- **Objetivo:** Configurar notificaciones  
+
+- **Pasos principales:**  
+  1. El usuario establece sus preferencias de notificación.  
+
+  2. El sistema guarda las preferencias.  
+
+  3. Si hay error en la base de datos, muestra mensaje de error.  
+
+  4. Si el guardado es exitoso, muestra mensaje de éxito.
+
 ![Configurar Notificaciones](diagramasCU/19_configurar_notificaciones.png)  
 
+
 #### Recibir Notificaciones
+
+- **Actor:** Sistema  
+
+- **Objetivo:** Enviar notificaciones  
+
+- **Pasos principales:**  
+  1. El sistema intenta enviar notificaciones.  
+
+  2. Si hay error en el envío, guarda log de error.  
+
+  3. Si el envío es exitoso, registra el éxito.  
+
+  4. Finaliza el proceso de notificación.
+
 ![Recibir Notificaciones](diagramasCU/20_recibir_notificaciones.png)  
 
 ---
