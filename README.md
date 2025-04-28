@@ -100,7 +100,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ## ✅ Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso Simplificado](diagramasCU/diagrama_simplificado.png)
+![Diagrama de Casos de Uso Simplificado](diagrama_simplificado.png)
 
 ### Casos de Uso 
 
