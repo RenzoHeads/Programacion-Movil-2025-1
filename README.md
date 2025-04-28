@@ -190,6 +190,34 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 ---
 
 ## 📚 Descripción de Casos de Uso
+### Autenticación y Perfil
 
+La gestión de Autenticación y Perfil permite a los usuarios registrarse, iniciar sesión, restablecer su contraseña y actualizar sus datos personales. Estos procesos son fundamentales para garantizar la seguridad de la cuenta y la correcta gestión de la información del usuario.
+
+![AutenticacionPerfil](gestionCuenta.png)  
+
+---
+
+## Gestión de Tareas
+
+La gestión de Tareas permite a los usuarios crear, editar, eliminar, visualizar y buscar tareas. También se ofrece la posibilidad de marcar tareas como completadas, facilitando así el control y seguimiento de las actividades diarias.
+
+![Gestion Tareas](gestionTareas.png)  
+
+
+---
+
+## Gestión de Listas
+
+La gestión de Listas permite organizar tareas en diferentes listas personalizadas. Los usuarios pueden crear, editar, eliminar listas, visualizar sus detalles, gestionar las tareas asignadas y aprovechar la generación automática de listas mediante Inteligencia Artificial.
+
+![Gestion Tareas](gestionListas.png)  
+---
+
+## Gestión de Notificaciones
+
+La Gestión de Notificaciones permite a los usuarios visualizar, configurar y recibir notificaciones relacionadas con sus tareas y listas. Esto ayuda a mantenerlos informados sobre eventos importantes y cambios dentro de la aplicación.
+
+![Gestion Tareas](gestionNoti.png)  
 
 ---
