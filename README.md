@@ -194,7 +194,9 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 La gestión de autenticación y perfil permite a los usuarios registrarse, iniciar sesión, restablecer su contraseña y actualizar sus datos personales. Estos procesos son fundamentales para garantizar la seguridad de la cuenta y la correcta gestión de la información del usuario.
 
-![AutenticacionPerfil](gestionCuenta.png)  
+![Autenticación](descripcion-casos-uso/1_autenticacion.png)
+
+![Perfil](descripcion-casos-uso/1_perfil.png)
 
 ---
 
@@ -202,7 +204,9 @@ La gestión de autenticación y perfil permite a los usuarios registrarse, inici
 
 La gestión de tareas permite a los usuarios crear, editar, eliminar, visualizar y buscar tareas. También se ofrece la posibilidad de marcar tareas como completadas, facilitando así el control y seguimiento de las actividades diarias.
 
-![Gestion Tareas](gestionTareas.png)  
+![Gestión de Tareas - 1](descripcion-casos-uso/2_visualizacion_tareas.png)
+
+![Gestión de Tareas - 2](descripcion-casos-uso/2_acciones_tareas.png)
 
 
 ---
