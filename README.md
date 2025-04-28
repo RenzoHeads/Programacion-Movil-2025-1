@@ -8,6 +8,7 @@
 - Diego Arturo Huaman Bonilla 20211287
 - Rodrigo Alonso Lara Camacho 20211415
 - Rodrigo Gabriel Pérez Peña 20191544
+
 ---
 
 ## 🛠️ Entorno de Desarrollo
@@ -134,52 +135,73 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 
 ### Autenticación y Perfil
-- ![Registro de Usuario](diagramasCU/1_registro_usuario.png)  
-  **Registro de Usuario**
-- ![Inicio de Sesión](diagramasCU/2_inicio_sesion.png)  
-  **Inicio de Sesión**
-- ![Restablecer Contraseña](diagramasCU/3_restablecer_contrasena.png)  
-  **Restablecer Contraseña**
-- ![Actualizar Datos del Usuario](diagramasCU/4_actualizar_datos_usuario.png)  
-  **Actualizar Datos del Usuario**
+
+#### Registro de Usuario
+![Registro de Usuario](diagramasCU/1_registro_usuario.png)  
+
+#### Inicio de Sesión
+![Inicio de Sesión](diagramasCU/2_inicio_sesion.png)  
+
+#### Restablecer Contraseña
+![Restablecer Contraseña](diagramasCU/3_restablecer_contrasena.png)  
+
+#### Actualizar Datos del Usuario
+![Actualizar Datos del Usuario](diagramasCU/4_actualizar_datos_usuario.png)  
 
 ### Gestión de Tareas
-- ![Crear Tarea](diagramasCU/5_crear_tarea.png)  
-  **Crear Tarea**
-- ![Editar Tarea](diagramasCU/6_editar_tarea.png)  
-  **Editar Tarea**
-- ![Eliminar tarea](eliminarTarea.png)  
-  **Eliminar Tarea**
-- ![Visualizar tareas](visualizarTareas.png)  
-  **Visualizar Tareas**
-- ![Marcar tarea completada](marcarTareaCompletada.png)  
-  **Marcar Tarea como Completada**
-- ![Buscar tareas](buscarTareas.png)  
-  **Buscar Tareas y Listas**
+
+#### Crear Tarea
+![Crear Tarea](diagramasCU/5_crear_tarea.png)  
+
+#### Editar Tarea
+![Editar Tarea](diagramasCU/6_editar_tarea.png) 
+
+#### Eliminar Tarea
+![Eliminar tarea](eliminarTarea.png)
+
+#### Visualizar Tareas
+![Visualizar tareas](visualizarTareas.png)  
+
+#### Marcar Tarea como Completada
+![Marcar tarea completada](marcarTareaCompletada.png)  
+
+#### Buscar Tareas y Listas
+![Buscar tareas](buscarTareas.png)  
+
 
 ### Gestión de Listas
-- ![Crear lista](crearLista.png)  
-  **Crear Lista**
-- ![Editar lista](editarLista.png)  
-  **Editar Lista**
-- ![Eliminar lista](eliminarLista.png)  
-  **Eliminar Lista**
-- ![Ver lista](verLista.png)  
-  **Ver Detalles de Lista**
-- ![Ver todas las listas](verTodasListas.png)  
-  **Visualizar Todas las Listas**
-- ![Asignar/desasignar tareas](asignarTarea.png)  
-  **Asignar/Desasignar Tareas de una Lista**
-- ![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/7_generar_lista_con_ia.png)  
-  **Generar Lista con Tareas usando Inteligencia Artificial**
+
+#### Crear Lista
+![Crear lista](crearLista.png)  
+
+#### Editar Lista
+![Editar lista](editarLista.png)  
+
+#### Eliminar Lista
+![Eliminar lista](eliminarLista.png)  
+
+#### Ver Detalles de Lista
+![Ver lista](verLista.png)  
+
+#### Visualizar Todas las Listas
+![Ver todas las listas](verTodasListas.png)  
+
+#### Asignar/Desasignar Tareas de una Lista
+![Asignar/desasignar tareas](asignarTarea.png)  
+
+#### Generar Lista con Tareas usando Inteligencia Artificial
+![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/7_generar_lista_con_ia.png)  
 
 ### Gestión de Notificaciones
-- ![Visualizar Notificaciones](diagramasCU/8_visualizar_notificaciones.png)  
-  **Visualizar Notificaciones**
-- ![Configurar Notificaciones](diagramasCU/9_configurar_notificaciones.png)  
-  **Configurar Notificaciones**
-- ![Recibir Notificaciones](diagramasCU/10_recibir_notificaciones.png)  
-  **Recibir Notificaciones**
+
+#### Visualizar Notificaciones
+![Visualizar Notificaciones](diagramasCU/8_visualizar_notificaciones.png)  
+
+#### Configurar Notificaciones
+![Configurar Notificaciones](diagramasCU/9_configurar_notificaciones.png)  
+
+#### Recibir Notificaciones
+![Recibir Notificaciones](diagramasCU/10_recibir_notificaciones.png)  
 
 ---
 
