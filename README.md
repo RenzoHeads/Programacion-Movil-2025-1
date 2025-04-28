@@ -1,8 +1,8 @@
 
 # 📱 Proyecto de Aplicación Móvil - Asignación 1
 
-
 **Integrantes del grupo:**
+
 - Cabezas Diaz Renzo Edgar 20224558
 - David Vela Larrea 20202209
 - Diego Arturo Huaman Bonilla 20211287
@@ -12,9 +12,11 @@
 ---
 
 ## 🛠️ Entorno de Desarrollo
+
 El entorno de desarrollo de nuestra aplicación móvil para la administración de tareas está compuesto por una combinación de tecnologías orientadas al desarrollo multiplataforma, backend robusto y servicios en la nube. A continuación, detallamos cada una de las herramientas que estamos definiendo para utilizar, su propósito y cómo fueron configuradas para el proyecto.
 
 ### 1.Flutter
+
 Descripción: Framework de código abierto desarrollado por Google, permite crear aplicaciones móviles nativas para Android e iOS a partir de un único código base.
 
 Instalación:
@@ -24,6 +26,7 @@ Ejecutar flutter doctor para verificar dependencias y configuraciones necesarias
 Instalar un editor como Visual Studio Code o Android Studio, con el plugin de Flutter y Dart.
 
 ### 2. Ruby (Backend con Sinatra)
+
 Descripción: Framework minimalista escrito en Ruby, ideal para desarrollar APIs RESTful de forma rápida y ligera.
 
 Instalación:
@@ -33,6 +36,7 @@ Crear el proyecto inicial con main.rb y config.ru para definir la API.
 Configurar rutas para comunicar con la app Flutter.
 
 ### 3.Base de Datos PostgreSQL (Azure Database for PostgreSQL)
+
 Descripción: Sistema de gestión de bases de datos relacional, utilizado para almacenar los datos estructurados de la aplicación como usuarios, tareas y categorías.
 
 Instalación:
@@ -42,6 +46,7 @@ Usar el cliente psql o herramientas como PgAdmin para gestionar la base de datos
 Configurar las credenciales en el archivo database.yml del backend Ruby.
 
 ### 4.Azure Blob Storage
+
 Descripción: Servicio de almacenamiento de objetos no estructurados en la nube, usado para guardar imágenes asociadas a las tareas o categorías.
 
 Instalación:
@@ -51,6 +56,7 @@ Generar SAS Tokens para acceso seguro desde el backend.
 Integrar con el backend utilizando gemas como azure-storage-blob.
 
 ### 5.Servicio LLM (Large Language Model) Externo
+
 Descripción: Modelo de lenguaje con IA usado para generar automáticamente listas de tareas personalizadas según las necesidades del usuario.
 
 Integración:
@@ -59,6 +65,7 @@ Configuración de autenticación con API Key o Bearer Token.
 Uso de la biblioteca Net::HTTP o HTTParty en Ruby para enviar solicitudes al modelo.
 
 ### 6.Microsoft Azure (Plataforma de Despliegue)
+
 Descripción: Plataforma cloud donde se alojan todos los servicios: backend, base de datos y almacenamiento.
 
 Configuración:
@@ -66,36 +73,41 @@ Uso del Servicio de Aplicaciones de Azure para desplegar el backend Ruby.
 Configuración de variables de entorno (por ejemplo, claves y URIs).
 Uso de GitHub Actions para automatizar despliegues.
 
-
 ---
+
 ## 🚀 Diagrama de Despliegue
 
 ![Diagrama de Despliegue](diagramadespliegue3.png)
 
-#### El diagrama de despliegue representa la arquitectura de una aplicación móvil desarrollada en Flutter que se comunica con un backend Ruby a través de solicitudes HTTP API. Este backend está desplegado en un Servicio de Aplicaciones dentro de la nube de Azure. La aplicación maneja datos estructurados mediante una base de datos PostgreSQL alojada en Azure Database for PostgreSQL, y archivos multimedia (como imágenes) a través de Azure Blob Storage. Además, el sistema integra un servicio LLM (modelo de lenguaje) externo, encargado de generar listas de tareas utilizando inteligencia artificial, al cual el backend envía solicitudes específicas. La arquitectura sigue un enfoque modular que separa claramente los componentes de cliente, lógica de negocio, almacenamiento, base de datos y generación inteligente.
+El diagrama de despliegue representa la arquitectura de una aplicación móvil desarrollada en Flutter que se comunica con un backend Ruby a través de solicitudes HTTP API. Este backend está desplegado en un Servicio de Aplicaciones dentro de la nube de Azure. La aplicación maneja datos estructurados mediante una base de datos PostgreSQL alojada en Azure Database for PostgreSQL, y archivos multimedia (como imágenes) a través de Azure Blob Storage. Además, el sistema integra un servicio LLM (modelo de lenguaje) externo, encargado de generar listas de tareas utilizando inteligencia artificial, al cual el backend envía solicitudes específicas. La arquitectura sigue un enfoque modular que separa claramente los componentes de cliente, lógica de negocio, almacenamiento, base de datos y generación inteligente.
+
 ---
 
 ## ☁️ Requisitos No Funcionales
 
-### Autenticación segura entre cliente y servidor:
+### Autenticación segura entre cliente y servidor
+
 La aplicación móvil en Flutter debe comunicarse con el backend mediante HTTPS cada solicitud enviada al servidor Ruby.
 
-### Disponibilidad del backend:
+### Disponibilidad del backend
+
 El Servicio de Aplicaciones de Azure que ejecuta el backend Ruby garantiza disponibilidad continua.
 
-### Acceso rápido a imágenes:
+### Acceso rápido a imágenes
+
 El acceso a imágenes almacenadas en Azure Blob Storage debe realizarse mediante URLs firmadas (SAS tokens).
 
-### Tolerancia a fallos en la generación IA:
+### Tolerancia a fallos en la generación IA
+
 Las solicitudes al servicio LLM deben manejar errores y tiempos de espera, permitiendo mostrar mensajes adecuados al usuario si el generador falla o demora.
 
-### Eficiencia en consultas a la base de datos:
+### Eficiencia en consultas a la base de datos
+
 Las consultas del backend Ruby hacia PostgreSQL deben estar optimizadas con índices y paginación para garantizar tiempos de respuesta bajos, incluso con grandes volúmenes de datos.
 
-### Escalabilidad del sistema:
+### Escalabilidad del sistema
+
 Cada componente (backend, base de datos, almacenamiento y servicio IA) debe poder escalarse de forma independiente según la demanda de usuarios o procesamiento.
-
-
 
 ---
 
@@ -103,7 +115,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Diagrama de Casos de Uso Simplificado](diagrama_simplificado.png)
 
-### Casos de Uso 
+### Casos de Uso
 
 | Caso de Uso                                 | Descripción |
 |----------------------------------------------|-------------|
@@ -132,10 +144,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ## 📸 Imágenes de Casos de Uso
 
-
-
 ### Autenticación y Perfil
-
 
 #### Registro de Usuario
 
@@ -154,6 +163,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Registro de Usuario](diagramasCU/1_registro_usuario.png)  
 
+&nbsp;
 
 #### Inicio de Sesión
 
@@ -174,6 +184,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Inicio de Sesión](diagramasCU/2_inicio_sesion.png)  
 
+&nbsp;
 
 #### Restablecer Contraseña
 
@@ -195,6 +206,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Restablecer Contraseña](diagramasCU/3_restablecer_contrasena.png)  
 
+&nbsp;
 
 #### Actualizar Datos del Usuario
 
@@ -213,10 +225,9 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Actualizar Datos del Usuario](diagramasCU/4_actualizar_datos_usuario.png)  
 
-
+&nbsp;
 
 ### Gestión de Tareas
-
 
 #### Crear Tarea
 
@@ -237,6 +248,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Crear Tarea](diagramasCU/5_crear_tarea.png)  
 
+&nbsp;
 
 #### Editar Tarea
 
@@ -251,10 +263,11 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
   3. Si los datos están incompletos o si la tarea no existe, muestra mensaje de error.
 
-  5. Si los datos son válidos, actualiza la tarea y muestra mensaje de éxito.
+  4. Si los datos son válidos, actualiza la tarea y muestra mensaje de éxito.
 
 ![Editar Tarea](diagramasCU/6_editar_tarea.png) 
 
+&nbsp;
 
 #### Eliminar Tarea
 
@@ -273,6 +286,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Eliminar tarea](diagramasCU/7_eliminar_tarea.png)
 
+&nbsp;
 
 #### Visualizar Tareas
 
@@ -289,6 +303,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Visualizar tareas](diagramasCU/8_visualizar_tareas.png)  
 
+&nbsp;
 
 #### Marcar Tarea como Completada
 
@@ -305,6 +320,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Marcar tarea completada](diagramasCU/9_marcar_tarea_completada.png)  
 
+&nbsp;
 
 #### Buscar Tareas y Listas
 
@@ -321,10 +337,9 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Buscar tareas](diagramasCU/10_buscar_tareas.png)  
 
-
+&nbsp;
 
 ### Gestión de Listas
-
 
 #### Crear Lista
 
@@ -343,6 +358,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Crear lista](diagramasCU/11_crear_lista.png)  
 
+&nbsp;
 
 #### Editar Lista
 
@@ -357,10 +373,11 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
   3. Si son válidos, guarda los cambios en la base de datos, muestra mensaje de confirmación y regresa a la pantalla inicial.
 
-  5. Si hay error, muestra mensaje de error.
+  4. Si hay error, muestra mensaje de error.
 
 ![Editar lista](diagramasCU/12_editar_lista.png)  
 
+&nbsp;
 
 #### Eliminar Lista
 
@@ -375,10 +392,11 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
   3. Elimina la lista de la base de datos, muestra mensaje de confirmación y regresa a la pantalla inicial.
 
-  5. Si hay error, muestra mensaje de error.
+  4. Si hay error, muestra mensaje de error.
 
 ![Eliminar lista](diagramasCU/13_eliminar_lista.png)  
 
+&nbsp;
 
 #### Ver Detalles de Lista
 
@@ -395,6 +413,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Ver lista](diagramasCU/14_ver_lista.png)
 
+&nbsp;
 
 #### Visualizar Todas las Listas
 
@@ -411,6 +430,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Ver todas las listas](diagramasCU/15_ver_todas_listas.png)  
 
+&nbsp;
 
 #### Asignar/Desasignar Tareas de una Lista
 
@@ -427,6 +447,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Asignar/desasignar tareas](diagramasCU/16_asignar_tarea.png)  
 
+&nbsp;
 
 #### Generar Lista con Tareas usando Inteligencia Artificial
 
@@ -445,10 +466,9 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/17_generar_lista_con_ia.png)  
 
-
+&nbsp;
 
 ### Gestión de Notificaciones
-
 
 #### Visualizar Notificaciones
 
@@ -469,6 +489,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Visualizar Notificaciones](diagramasCU/18_visualizar_notificaciones.png)  
 
+&nbsp;
 
 #### Configurar Notificaciones
 
@@ -487,6 +508,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ![Configurar Notificaciones](diagramasCU/19_configurar_notificaciones.png)  
 
+&nbsp;
 
 #### Recibir Notificaciones
 
@@ -510,10 +532,11 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 ## 📚 Diagrama de clases
 
 ![Diagrama de clases](diagrama_declases.png)  
----
+
 ---
 
 ## 📚 Descripción de Casos de Uso
+
 ### Autenticación y Perfil
 
 La gestión de autenticación y perfil permite a los usuarios registrarse, iniciar sesión, restablecer su contraseña y actualizar sus datos personales. Estos procesos son fundamentales para garantizar la seguridad de la cuenta y la correcta gestión de la información del usuario.
@@ -521,8 +544,6 @@ La gestión de autenticación y perfil permite a los usuarios registrarse, inici
 ![Autenticación](descripcion-casos-uso/1_autenticacion.png)
 
 ![Perfil](descripcion-casos-uso/1_perfil.png)
-
----
 
 ## Gestión de Tareas
 
@@ -532,10 +553,6 @@ La gestión de tareas permite a los usuarios crear, editar, eliminar, visualizar
 
 ![Gestión de Tareas - 2](descripcion-casos-uso/2_acciones_tareas.png)
 
-
-
----
-
 ## Gestión de Listas
 
 La gestión de listas permite organizar tareas en diferentes listas personalizadas. Los usuarios pueden crear, editar, eliminar listas, visualizar sus detalles, gestionar las tareas asignadas y aprovechar la generación automática de listas mediante Inteligencia Artificial.
@@ -543,7 +560,6 @@ La gestión de listas permite organizar tareas en diferentes listas personalizad
 ![Gestión de Listas - 1](descripcion-casos-uso/3_gestion_listas_1.png)
 
 ![Gestión de Listas - 2](descripcion-casos-uso/3_gestion_listas_2.png)
----
 
 ## Gestión de Notificaciones
 
