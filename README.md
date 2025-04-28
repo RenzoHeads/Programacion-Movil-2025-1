@@ -98,230 +98,50 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ---
 
-## ✅ Diagrama de casos de uso (Requisitos funcionales)
+## ✅ Diagrama de Casos de Uso
+
+![Diagrama de Casos de Uso Simplificado](diagramasCU/diagrama_simplificado.png)
+
+### Casos de Uso 
+
+| Grupo de Casos de Uso           | Descripción |
+|----------------------------------|-------------|
+| Autenticación y Perfil           | Permite al usuario registrarse, iniciar sesión, restablecer contraseña y actualizar sus datos personales. |
+| Gestión de Tareas                | Permite al usuario crear, editar, eliminar, visualizar tareas, marcar tareas como completadas y buscar tareas o listas. |
+| Gestión de Listas                | Permite al usuario crear, editar, eliminar listas, ver detalles de una lista, visualizar todas las listas, asignar o desasignar tareas a listas, y generar listas automáticamente mediante Inteligencia Artificial. |
+| Gestión de Notificaciones        | Permite al usuario visualizar, configurar y recibir notificaciones relacionadas a su actividad en la aplicación. |
+
+---
+
+## 📸 Imágenes de Casos de Uso
 
 ### Autenticación y Perfil
-
-#### Registro de Usuario
-
-![Registro de Usuario](diagramasCU/1_registro_usuario.png)
-
-#### Inicio de Sesión
-
-![Inicio de Sesión](diagramasCU/2_inicio_sesion.png)
-
-#### Restablecer Contraseña
-
-![Restablecer Contraseña](diagramasCU/3_restablecer_contrasena.png)
-
-#### Actualizar Datos del Usuario
-
-![Actualizar Datos del Usuario](diagramasCU/4_actualizar_datos_usuario.png)
-
----
-
+- ![Registro de Usuario](diagramasCU/1_registro_usuario.png)
+- ![Inicio de Sesión](diagramasCU/2_inicio_sesion.png)
+- ![Restablecer Contraseña](diagramasCU/3_restablecer_contrasena.png)
+- ![Actualizar Datos del Usuario](diagramasCU/4_actualizar_datos_usuario.png)
 
 ### Gestión de Tareas
-
-#### Crear Tarea
-
-![Crear Tarea](diagramasCU/5_crear_tarea.png)
-
-#### Editar Tarea
-
-![Editar Tarea](diagramasCU/6_editar_tarea.png)
-
-
-#### Eliminar tarea
-Actor: Usuario
-Caso de Uso: Eliminar tarea
-
-Flujo:
-
-El Usuario selecciona una tarea para eliminar.
-
-El sistema muestra una confirmación para asegurarse de que el Usuario quiere eliminar la tarea.
-
-Si el Usuario confirma, el sistema elimina la tarea de la base de datos.
-
-Después de eliminar la tarea, el sistema muestra un mensaje de confirmación y regresa al inicio.
-
-Diagrama de Caso de Uso:
-![Eliminar tarea](eliminarTarea.png)
-
-#### Visualizar todas las tareas
-Actor: Usuario
-Caso de Uso: Visualizar todas las tareas
-
-Flujo:
-
-El Usuario solicita ver todas las tareas.
-
-El sistema consulta la base de datos y muestra todas las tareas disponibles.
-
-Diagrama de Caso de Uso: ![Visualizar tareas](visualizarTareas.png)
-
-#### Marcar tarea como completada
-Actor: Usuario
-Caso de Uso: Marcar tarea como completada
-
-Flujo:
-
-El Usuario selecciona una tarea para marcarla como completada.
-
-El sistema actualiza el estado de la tarea en la base de datos.
-
-Después de la actualización, el sistema muestra un mensaje de confirmación.
-
-El sistema regresa al "Marcar tarea como completada" para permitir al Usuario realizar más cambios.
-
-Diagrama de Caso de Uso: ![Marcar tarea completada](marcarTareaCompletada.png)
-
-#### Buscar tareas y listas
-Actor: Usuario
-Caso de Uso: Buscar tareas y listas
-
-Flujo:
-
-El Usuario solicita buscar tareas o listas específicas.
-
-El sistema consulta la base de datos y devuelve las tareas y listas que coinciden con los criterios de búsqueda.
-
-Diagrama de Caso de Uso: ![Buscar tareas](buscarTareas.png)
-
----
+- ![Crear Tarea](diagramasCU/5_crear_tarea.png)
+- ![Editar Tarea](diagramasCU/6_editar_tarea.png)
+- ![Eliminar tarea](eliminarTarea.png)
+- ![Visualizar tareas](visualizarTareas.png)
+- ![Marcar tarea completada](marcarTareaCompletada.png)
+- ![Buscar tareas](buscarTareas.png)
 
 ### Gestión de Listas
-
-#### Crear lista
-Actor: Usuario
-Caso de Uso: Crear lista
-
-Flujo:
-
-El Usuario ingresa el nombre y detalles para crear una nueva lista.
-
-El sistema guarda la nueva lista en la base de datos.
-
-Después de guardar la lista, el sistema muestra un mensaje de confirmación.
-
-El sistema luego regresa al inicio o a la pantalla principal.
-
-Diagrama de Caso de Uso: ![Crear lista](crearLista.png)
-
-
-#### Editar lista (cambiar nombre, color o descripción)
-Actor: Usuario
-Caso de Uso: Editar lista (cambiar nombre, color o descripción)
-
-Flujo:
-
-El Usuario selecciona una lista para editar.
-
-El sistema valida que los datos ingresados sean correctos.
-
-Si la validación es exitosa:
-
-El sistema guarda los cambios en la base de datos.
-
-Muestra un mensaje de confirmación y regresa al inicio.
-
-Si la validación falla:
-
-El sistema muestra un mensaje de error.
-
-Diagrama de Caso de Uso: ![Editar lista](editarLista.png)
-
-
-#### Eliminar lista
-Actor: Usuario
-Caso de Uso: Eliminar lista
-
-Flujo:
-
-El Usuario selecciona una lista para eliminar.
-
-El sistema valida que la lista se pueda eliminar.
-
-Si la validación es exitosa:
-
-El sistema elimina la lista de la base de datos.
-
-Muestra un mensaje de confirmación y regresa al inicio.
-
-Si la validación falla:
-
-El sistema muestra un mensaje de error.
-
-Diagrama de Caso de Uso: ![Eliminar lista](eliminarLista.png)
-
-
-#### Ver detalles de lista
-Actor: Usuario
-Caso de Uso: Ver detalles de lista
-
-Flujo:
-
-El Usuario selecciona una lista para ver sus detalles.
-
-El sistema consulta la base de datos y devuelve los detalles de la lista seleccionada.
-
-Diagrama de Caso de Uso: ![Ver lista](verLista.png)
-
-
-#### Visualizar todas las listas
-Actor: Usuario
-Caso de Uso: Visualizar todas las listas
-
-Flujo:
-
-El Usuario solicita ver todas las listas.
-
-El sistema consulta la base de datos y muestra todas las listas disponibles.
-
-Diagrama de Caso de Uso: ![Ver todas las listas](verTodasListas.png)
-
-
-#### Asignar/desasignar tareas de una lista
-Actor: Usuario
-Caso de Uso: Asignar/desasignar tareas de una lista
-
-Flujo:
-
-El Usuario selecciona una lista y una tarea para asignar o desasignar.
-
-El sistema realiza la acción correspondiente (asignar o desasignar) de la tarea en la lista.
-
-El sistema actualiza la base de datos con el cambio realizado.
-
-Después de la actualización, el sistema muestra un mensaje de confirmación.
-
-El sistema regresa al "Asignar/desasignar tareas de una lista" para permitir al Usuario continuar con otras asignaciones o desasignaciones.
-Diagrama de Caso de Uso: ![Asignar/desasignar tareas]( asignarTarea.png)
-
-
-#### Generar Lista con Tareas usando Inteligencia Artificial
-
-![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/7_generar_lista_con_ia.png)
-
+- ![Crear lista](crearLista.png)
+- ![Editar lista](editarLista.png)
+- ![Eliminar lista](eliminarLista.png)
+- ![Ver lista](verLista.png)
+- ![Ver todas las listas](verTodasListas.png)
+- ![Asignar/desasignar tareas](asignarTarea.png)
+- ![Generar Lista con Tareas usando Inteligencia Artificial](diagramasCU/7_generar_lista_con_ia.png)
 
 ### Gestión de Notificaciones
-
-#### Visualizar Notificaciones
-
-![Visualizar Notificaciones](diagramasCU/8_visualizar_notificaciones.png)
- 
-
-#### Configurar Notificaciones
-
-![Configurar Notificaciones](diagramasCU/9_configurar_notificaciones.png)
-
-
-#### Recibir Notificaciones
-
-![Recibir Notificaciones](diagramasCU/10_recibir_notificaciones.png)
-
-
+- ![Visualizar Notificaciones](diagramasCU/8_visualizar_notificaciones.png)
+- ![Configurar Notificaciones](diagramasCU/9_configurar_notificaciones.png)
+- ![Recibir Notificaciones](diagramasCU/10_recibir_notificaciones.png)
 
 ---
 
