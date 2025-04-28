@@ -115,7 +115,7 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 | Eliminar Tarea                              | Permite al usuario eliminar una tarea existente. |
 | Visualizar todas las tareas                 | Permite al usuario ver todas las tareas disponibles. |
 | Marcar tarea como completada                | Permite al usuario marcar una tarea como completada. |
-| Buscar tareas y listas                      | Permite al usuario buscar tareas y listas específicas. |
+| Buscar tareas y listas                      | Permite al usuario buscar tareas y listas específicas. Ademas de poder usar buscar por categorias o etiquetas. |
 | Crear lista                                 | Permite al usuario crear una nueva lista de tareas. |
 | Editar lista                                | Permite al usuario editar el nombre, color o descripción de una lista. |
 | Eliminar lista                              | Permite al usuario eliminar una lista existente. |
