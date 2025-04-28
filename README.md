@@ -136,17 +136,83 @@ Cada componente (backend, base de datos, almacenamiento y servicio IA) debe pode
 
 ### Autenticación y Perfil
 
+
 #### Registro de Usuario
+
+- **Actor:** Usuario no registrado
+
+- **Objetivo:** Verificar los datos del usuario para permitir el registro
+
+- **Pasos principales:**
+  1. El usuario ingresa sus datos.
+
+  2. El sistema valida los datos.
+
+  3. Si son válidos, redirige a la pantalla principal.
+
+  4. Si son inválidos, muestra un mensaje de error.
+
 ![Registro de Usuario](diagramasCU/1_registro_usuario.png)  
 
+
 #### Inicio de Sesión
+
+- **Actor:** Usuario
+
+- **Objetivo:** Iniciar sesión en el sistema
+
+- **Pasos principales:**
+  1. El usuario ingresa sus credenciales.
+
+  2. El sistema valida las credenciales.
+
+  3. Si son válidas, redirige a la pantalla principal.
+
+  4. Si el usuario no existe, muestra error "Usuario no encontrado".
+
+  5. Si la contraseña es incorrecta, muestra error "Contraseña incorrecta".
+
 ![Inicio de Sesión](diagramasCU/2_inicio_sesion.png)  
 
+
 #### Restablecer Contraseña
+
+- **Actor:** Usuario
+
+- **Objetivo:** Restablecer contraseña
+
+- **Pasos principales:**
+  1. El usuario solicita restablecer contraseña.
+
+  2. El sistema verifica si el usuario existe.
+
+  3. Si el usuario existe:
+      - Envía un correo con enlace de restablecimiento.
+      - El usuario ingresa nueva contraseña.
+      - El sistema actualiza la contraseña.
+
+  4. Si el usuario no existe, muestra mensaje de error.
+
 ![Restablecer Contraseña](diagramasCU/3_restablecer_contrasena.png)  
 
+
 #### Actualizar Datos del Usuario
+
+- **Actor:** Usuario
+
+- **Objetivo:** Actualizar perfil
+
+- **Pasos principales:**
+  1. El usuario ingresa nuevos datos para actualizar su perfil.
+
+  2. El sistema valida los datos.
+
+  3. Si el email ya está en uso, muestra mensaje de error.
+
+  4. Si los datos son válidos, actualiza el perfil y muestra mensaje de éxito.
+
 ![Actualizar Datos del Usuario](diagramasCU/4_actualizar_datos_usuario.png)  
+
 
 ### Gestión de Tareas
 
