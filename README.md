@@ -22,14 +22,14 @@ Agregar Flutter al PATH del sistema.
 Ejecutar flutter doctor para verificar dependencias y configuraciones necesarias.
 Instalar un editor como Visual Studio Code o Android Studio, con el plugin de Flutter y Dart.
 
-### 2.Ruby on Rails (Backend)
-Descripción: Framework MVC escrito en Ruby, ideal para desarrollar aplicaciones web robustas con APIs RESTful.
+### 2. Ruby (Backend con Sinatra)
+Descripción: Framework minimalista escrito en Ruby, ideal para desarrollar APIs RESTful de forma rápida y ligera.
 
 Instalación:
 Instalar Ruby (vía RVM o rbenv).
-Instalar Rails mediante el comando gem install rails.
-Crear el proyecto con rails new backend_api --api para iniciar una API backend.
-Configurar CORS y rutas para comunicar con la app Flutter.
+Instalar Sinatra mediante el comando gem install sinatra.
+Crear el proyecto inicial con main.rb y config.ru para definir la API.
+Configurar rutas para comunicar con la app Flutter.
 
 ### 3.Base de Datos PostgreSQL (Azure Database for PostgreSQL)
 Descripción: Sistema de gestión de bases de datos relacional, utilizado para almacenar los datos estructurados de la aplicación como usuarios, tareas y categorías.
