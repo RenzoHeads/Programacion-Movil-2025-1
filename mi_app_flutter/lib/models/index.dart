@@ -1,0 +1,9 @@
+// lib/models/index.dart
+export 'usuario.dart';
+export 'categoria.dart';
+export 'tarea.dart';
+export 'lista.dart';
+export 'etiqueta.dart';
+export 'recordatorio.dart';
+export 'comentario.dart';
+export 'tareaetiqueta.dart';
